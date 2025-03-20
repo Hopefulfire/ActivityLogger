@@ -1,0 +1,184 @@
+body{
+    margin: 0%;
+    font-family: Arial;
+    }
+    header{
+    display: flex;
+    align-content: center;
+    background-color: #2a328b;
+    }
+    .header-image{
+    flex: 4%;
+    align-self: center;
+    }
+    .header-image > img{
+    height: 10vh;
+    align-self: center;
+    }
+    header > h2{
+    flex: 46%;
+    margin: 0%;
+    align-self: center;
+    color: white;
+    }
+    nav.main{
+    display: flex;
+    flex: 50%;
+    align-self: center;
+    align-content: center;
+    color: white;
+    }
+    nav.main > a{
+    text-align: center;
+    flex: 25%;
+    font-weight: 900;
+    font-size: 2.25vh;
+    color: white;
+    text-decoration: none;
+    }
+    nav > a:hover{
+    text-decoration: underline;
+    color: #008242;
+    }
+    .Systems_menu{
+    display:flex;
+    }
+    nav.row{
+    display:flex;
+    flex-direction: column;
+    flex: 25%;
+    }
+    .submenu{
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #008242;
+    }
+    .opened.submenu{
+    display: flex;
+    height: 30vh;
+    animation: subMenuOpen 1s;
+    }
+    .closed.submenu{
+    display: flex;
+    animation: subMenuClose 1s;
+    height: 0vh;
+    }
+    div.opened.submenu{
+        display: flex;
+        flex-direction: row;
+        animation: subMenuOpen;
+    }
+    div.closed.submenu{
+    display: none;
+    animation: subMenuClose 1s;
+    
+    }
+    nav.submenu > a{
+    display: inherit;
+    }
+    div.submenu > a:hover{
+    color: white;
+    text-decoration: underline;
+    }
+    
+    .hero-image{
+    background-image: url(Images/programming.webp);
+    background-size: cover;
+    background-repeat: none;
+    display: flex;
+    height: 60vh;
+    align-content: center;
+    flex-direction: column;
+    }
+    .hero-text{
+    width: 50%;
+    display: flex;
+    text-align: center;
+    position: absolute;
+    flex-direction: column;
+    transform: translate(50%, 50%);
+    color: white;
+    }
+    .hero-text > button{
+    width: 20%;
+    align-self: center;
+    }
+    .page-break{
+    background-color: #2a328b;
+    height: 5px;
+    width: 100%;
+    }
+    .hero-button{
+    background: none;
+    border-radius: 0px;
+    border: solid 3px #008242;
+    color: white;
+    font-weight: 900;
+    text-shadow: 3px 3px black;
+    }
+    .hero-button:hover{
+    background-color: #008242;
+    text-shadow: none;
+    animation: hover-button 0.5s;
+    }
+    .info{
+    display: flex;
+    }
+    .column3{
+    flex: 32%;
+    padding-top: 10px;
+    text-align: center;
+    
+    }
+    .column3> h3{
+    color: #2a328b;
+    }
+    .C3button{
+    color: #2a328b;
+    background-color: transparent;
+    border: solid 2px #2a328b;
+    }
+    .C3button:hover{
+    background-color: #2a328b;
+    color: white;
+    animation: C3butt 0.5s;
+    }
+    .image3{
+    width: 32vw;
+    height: 50vh;
+    border-radius: 7px; 
+    }
+    hr{
+    border:2px solid #2a328b;
+    }
+    footer{
+        background-color: #2a328b;
+        display: flex;
+    }
+    @keyframes hover-button{
+    from{
+    background-color: transparent;
+    }
+    to{
+    background-color:#008242;
+    }
+    }
+    @keyframes C3butt{
+    from{background-color: transparent;}
+    to{background-color: #2a328b;}
+    }
+    @keyframes subMenuOpen{
+    from{height: 0vh;}
+    to{height: 30vh;}
+    }
+    @keyframes subMenuClose{
+    0%{height: 30vh; display:flex;}
+    99.9%{height: 0vh;}
+    100%{display: none;}
+    }
+    @keyframes subMenuCloseA{
+        0%{display:block; font-size: initial;}
+        99.9%{font-size: 0px;}
+        }
+    

@@ -1,12 +1,15 @@
 function subMenuOpen(){
 let openThis = document.getElementsByClassName("submenu");
-let elementNav = openThis[0];
-elementNav.classList.remove("closed");
-elementNav.classList.add("opened");
+for(i = 0; i < openThis.length; i++){
+    openThis[i].classList.remove("closed")
+    openThis[i].classList.add("opened");
+    console.log(openThis[i])
+}
 }
 function subMenuClose(){
 let closeThis = document.getElementsByClassName("submenu");
-let elementNav = closeThis[0];
-elementNav.classlist.remove("opened");
-elementNav.classlist.add("closed");
+for(i = 0; i < closeThis.length; i++){
+    closeThis[i].classList.remove("opened")
+    closeThis[i].classList.add("closed");
+}
 }
