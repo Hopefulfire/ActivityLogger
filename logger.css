@@ -1,26 +1,26 @@
 body{
-margin: 0%;
-font-family: Arial;
-}
-header{
-display: flex;
-align-content: center;
-background-color: #2a328b;
-}
-.header-image{
-flex: 4%;
-align-self: center;
-}
-.header-image > img{
-height: 10vh;
-align-self: center;
-}
-header > h2{
-flex: 46%;
-margin: 0%;
-align-self: center;
-color: white;
-}
+    margin: 0%;
+    font-family: Arial;
+    }
+    header{
+    display: flex;
+    align-content: center;
+    background-color: #2a328b;
+    }
+    .header-image{
+    flex: 4%;
+    align-self: center;
+    }
+    .header-image > img{
+    height: 10vh;
+    align-self: center;
+    }
+    header > h2{
+    flex: 46%;
+    margin: 0%;
+    align-self: center;
+    color: white;
+    }
     nav.main{
     display: flex;
     flex: 50%;
@@ -81,25 +81,14 @@ color: white;
     color: white;
     text-decoration: underline;
     }
-    .page-break{
-    background-color: #2a328b;
-    height: 5px;
-    width: 100%;
+    main{
+        display: flex;
+        flex-direction: column;
     }
-    .hero-button{
-    background: none;
-    border-radius: 0px;
-    border: solid 3px #008242;
-    color: white;
-    font-weight: 900;
-    text-shadow: 3px 3px black;
+    .search{
+        align-self: center;
+        text-align: center;
     }
-    .hero-button:hover{
-    background-color: #008242;
-    text-shadow: none;
-    animation: hover-button 0.5s;
-    }
-
     .column3{
     flex: 32%;
     padding-top: 10px;
